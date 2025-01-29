@@ -1,20 +1,65 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Hastane Yönetim Sistemi - ABP Framework & Blazor
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Bu proje, **ABP Framework** ile geliştirilmiş bir **hastane yönetim sistemi** uygulamasıdır. **Blazor** tabanlı bir arayüze sahiptir ve ABP Framework'ün  modüler yapısını kullanmaktadır.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+## Kurulum
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+Projenizi yerel ortamda çalıştırmak için aşağıdaki adımları izleyin.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+### Gerekli Araçlar
+Aşağıdaki araçlar yüklü olmalı
+- **.NET SDK 7.0** veya üzeri
+
+### Adımlar
+
+#### 1. Projeyi Klonlayın
+```sh
+git clone https://github.com/berfin-t/Pusula.HealthCare.git
+cd Pusula.Training.HealthCare
+```
+
+#### 2. Gereksinimleri Yükleyin
+
+```sh
+dotnet restore
+```
+```sh
+cd src/Pusula.Training.HealthCare.Blazor
+npm install
+install-libs
+```
+#### 3. Docker'ı Çalıştırın
+
+```sh
+docker run 
+```
+
+#### 4. Veritabanını Güncelleyin
+
+```sh
+dotnet run --project src/Pusula.Training.HealthCare.DbMigrator
+```
+
+#### 5. Projeyi Çalıştırın
+
+```sh
+dotnet run --project src/Pusula.Training.HealthCare.Tooling.Aspire
+```
+```sh
+dotnet run --project src/Pusula.Training.HealthCare.Blazor
+```
+
+#### 6. Uygulamayı Açın
+Tarayıcınızda aşağıdaki URL'lere giderek projeyi görüntüleyebilirsiniz:
+- **API:** [https://localhost:44301](https://localhost:44301)
+- **Blazor UI:** [https://localhost:44302](https://localhost:44302)
+
+---
+
+## Kullanılan Teknolojiler
+
+- **ABP Framework**
+- **Blazor**
+- **Syncfusion bileşenleri**
+- **Entity Framework Core**
+
